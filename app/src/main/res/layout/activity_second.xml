@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#FFFCE1">
+    android:background="#FFFFc0">
 
     <TextView
         android:id="@+id/textView2"
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="-16dp"
-        android:text="Berlin, Germany"
+        android:text="New York, USA"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -25,7 +25,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="16°C/31°C"
+        android:text="24°C/40°C"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="@+id/textView2"
@@ -40,20 +40,19 @@
         app:layout_constraintTop_toTopOf="@+id/textView2"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/sunny" />
+        app:lottie_rawRes="@raw/very_sunny" />
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/happyman"
+        android:id="@+id/lottieAnimationView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="goToSecondActivity"
-        app:lottie_loop="true"
-        app:lottie_autoPlay="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:lottie_rawRes="@raw/smiling_man"
-        />
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/delivery_guy" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
